@@ -4,10 +4,10 @@ function testFunc() {
   return "hi"
 }
 
-function superbowlWin(arr) {
-  let newArr = arr.find( i => i.result === "W" );
-  if (newArr === undefined ) {
-    return newArr ;
+function superbowlWin(sa) {
+  let win = sa.find( s => s.result === "W" )
+  if (win ===undefined ) {
+    return win ;
   }
-  return newArr.year ;
+  return win.year ;
 }
